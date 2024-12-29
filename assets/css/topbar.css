@@ -1,0 +1,12 @@
+/* 默认样式，适用于所有设备 */
+.div-element-top {
+    height: 95px;
+    background-color: #5ea5f7
+}
+  
+/* 媒体查询，仅在屏幕宽度小于768px时应用（通常768px是平板和手机的分界线） */
+@media (max-width: 767px) {
+  .div-element-top {
+    display: none; /* 在手机端隐藏 */
+  }
+}
