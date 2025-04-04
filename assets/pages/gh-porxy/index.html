@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
     <style>
+        /* 新增通知栏样式 */
+        .notification-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #1E90FF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: background 0.2s;
+        }
+        .notification-bar:hover {
+            background: #1C86EE;
+        }
+
         html,body {
             width: 100%;
             margin: 0
@@ -12,7 +30,7 @@
 
         body {
             min-height: 100%;
-            padding: 20px;
+            padding: 60px 20px 20px;
             box-sizing: border-box
         }
 
@@ -121,6 +139,10 @@
         <title>GitHub 文件加速</title>
     </head>
     <body class="flex">
+        <a href="https://status.akams.cn/status/services" target="_blank" class="notification-bar">
+            TBedu Github Proxy 现已在 AKAMS.CN 状态页面上线  点击前往→
+        </a>
+
         <h1 style="margin-bottom: 50px">
             <img src="https://www.helloimg.com/i/2025/02/01/679d80bfee0d1.png" style="width: 1.5em;margin-right: .2em;vertical-align: bottom;">GitHub 文件加速
         </h1>
@@ -134,37 +156,37 @@
                 <p>GitHub文件链接带不带协议头都可以，支持release、archive以及文件，右键复制出来的链接都是符合标准的。</p>
                 <p>注意，不支持项目文件夹，请使用Git。</p>
             </div>
-<div class="example">
-    <p>
-        分支源码：<font color="#1E90FF">https://github.tbedu.top/</font>
-        https://github.com/TBedu/project/archive/master.zip
-    </p>
-    <p>
-        release源码：<font color="#1E90FF">https://github.tbedu.top/</font>
-        https://github.com/TBedu/project/archive/v0.1.0.tar.gz
-    </p>
-    <p>
-        release文件：<font color="#1E90FF">https://github.tbedu.top/</font>
-        https://github.com/TBedu/project/releases/download/v0.1.0/example.zip
-    </p>
-    <p>
-        分支文件：<font color="#1E90FF">https://github.tbedu.top/</font>
-        https://github.com/TBedu/project/blob/master/filename
-    </p>
-    <p>
-        Raw：<font color="#1E90FF">https://github.tbedu.top/</font>
-        https://raw.githubusercontent.com/TBedu/project/archive/master.zip
-    </p>
-    <p>
-        使用Git: git clone <font color="#1E90FF">https://github.tbedu.top/</font>
-        https://github.com/TBedu/project
-    </p>
-</div>
-</form>
-<p style="position: sticky;top: calc(100% - 2.5em);">
-    由 <a style="color: #1E90FF" href="https://github.com/hunshcn/gh-proxy" target="_blank">gh-proxy</a> 
-    提供技术支持。
-    在 <a style="color: #1E90FF" href="https://workers.cloudflare.com/" target="_blank">Cloudflare Workers</a> 
-    上运行。
-</p>
-</body></html>
+            <div class="example">
+                <p>
+                    分支源码：<font color="#1E90FF">https://github.tbedu.top/</font>
+                    https://github.com/TBedu/project/archive/master.zip
+                </p>
+                <p>
+                    release源码：<font color="#1E90FF">https://github.tbedu.top/</font>
+                    https://github.com/TBedu/project/archive/v0.1.0.tar.gz
+                </p>
+                <p>
+                    release文件：<font color="#1E90FF">https://github.tbedu.top/</font>
+                    https://github.com/TBedu/project/releases/download/v0.1.0/example.zip
+                </p>
+                <p>
+                    分支文件：<font color="#1E90FF">https://github.tbedu.top/</font>
+                    https://github.com/TBedu/project/blob/master/filename
+                </p>
+                <p>
+                    Raw：<font color="#1E90FF">https://github.tbedu.top/</font>
+                    https://raw.githubusercontent.com/TBedu/project/archive/master.zip
+                </p>
+                <p>
+                    使用Git: git clone <font color="#1E90FF">https://github.tbedu.top/</font>
+                    https://github.com/TBedu/project
+                </p>
+            </div>
+        </form>
+        <p style="position: sticky;top: calc(100% - 2.5em);">
+            由 <a style="color: #1E90FF" href="https://github.com/hunshcn/gh-proxy" target="_blank">gh-proxy</a> 
+            提供技术支持 |
+            <a style="color: #1E90FF" href="https://www.tbedu.top" target="_blank">TBEDU.TOP</a>
+        </p>
+    </body>
+</html>
