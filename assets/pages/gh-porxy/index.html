@@ -4,7 +4,9 @@
         /* 新增通知栏样式 */
         .notification-bar {
             position: static;
-            width: 100%;
+            display: block; /* 新增 */
+            width: calc(100% + 40px); /* 新增 */
+            margin: -20px -20px 20px -20px; /* 新增 */
             background: #1E90FF;
             color: white;
             text-align: center;
@@ -12,6 +14,7 @@
             text-decoration: none;
             z-index: 1000;
             transition: background 0.2s;
+            box-sizing: content-box; /* 新增 */
         }
         .notification-bar:hover {
             background: #1C86EE;
@@ -28,7 +31,7 @@
 
         body {
             min-height: 100%;
-            padding: 20px 20px 20px;
+            padding: 0 20px 20px;
             box-sizing: border-box
         }
 
@@ -147,7 +150,7 @@
     </head>
     <body class="flex">
         <a href="https://status.akams.cn/status/services" target="_blank" class="notification-bar">
-            TBedu Github Proxy 现已在 AKAMS.CN 状态页面上线  点击前往→
+            欢迎来到 TBedu Github Proxy，本站现已在 AKAMS.CN 状态页面上线 点击前往→
         </a>
 
         <h1 style="margin-bottom: 50px">
