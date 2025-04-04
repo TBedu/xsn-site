@@ -3,9 +3,7 @@
     <style>
         /* 新增通知栏样式 */
         .notification-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
+            position: static;
             width: 100%;
             background: #1E90FF;
             color: white;
@@ -30,7 +28,7 @@
 
         body {
             min-height: 100%;
-            padding: 60px 20px 20px;
+            padding: 20px 20px 20px;
             box-sizing: border-box
         }
 
@@ -40,7 +38,7 @@
 
         @media(max-width: 500px) {
             h1 {
-                margin-top:80px
+                margin-top:40px
             }
         }
 
@@ -121,6 +119,15 @@
             content: '合法输入示例：';
             color: #7b7b7b
         }
+        /* 新增页脚链接样式 */
+        .docker-tip {
+            margin-bottom: 15px;
+            color: #7b7b7b;
+        }
+        .docker-tip a {
+            color: #1E90FF;
+            text-decoration: none;
+        }
     </style>
     <head>
         <meta name="description" content="GitHub 文件加速"/>
@@ -183,6 +190,9 @@
                 </p>
             </div>
         </form>
+        <p class="docker-tip">
+            需要 Docker Hub 镜像加速吗？<a href="https://docker.tbedu.top" target="_blank">点击前往</a>
+        </p>
         <p style="position: sticky;top: calc(100% - 2.5em);">
             由 <a style="color: #1E90FF" href="https://github.com/hunshcn/gh-proxy" target="_blank">gh-proxy</a> 
             提供技术支持 |
